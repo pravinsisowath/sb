@@ -1,0 +1,28 @@
+
+.hero-full-screen {
+    background: url("https://media-exp1.licdn.com/dms/image/C561BAQEvAqnEElKFaw/company-background_10000/0?e=2159024400&v=beta&t=1DjjlkvJp7qpZqjg6vcU5h_3noUyA0EIzpWUkk5XNZ4") center center fixed;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-size: cover;
+}
+
+
+
+@media only screen and (min-width : 800px)
+{.categories
+{
+    position: sticky;
+    top: 0;
+}
+}

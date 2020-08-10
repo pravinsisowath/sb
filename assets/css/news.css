@@ -1,0 +1,53 @@
+
+.hero-full-screen {
+    background: url("../image/planet.jpg") center center fixed;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-size: cover;
+  }
+  .svg .hero-full-screen {background: url("../image/planet.jpg");}
+
+@media only screen and (min-width : 800px)
+{.categories
+{
+    position: sticky;
+    top: 0;
+}
+
+#iframe-id
+{
+    background-color: rgb(199, 199, 199);
+    width: 1000px;
+    height: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: sticky;
+    bottom: 0;
+    z-index: 11;
+}
+
+}
+@media only screen and (max-width : 800px)
+{#iframe-id
+{
+    background-color: rgb(199, 199, 199);
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    position: sticky;
+    bottom: 0;
+    z-index: 11;
+}
+}

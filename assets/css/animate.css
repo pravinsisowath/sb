@@ -1,0 +1,118 @@
+#jumbotron
+{
+    position: absolute;
+     background-size: cover;
+     z-index: 10;
+}
+
+ .largeheader {
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 10;
+ }
+ 
+
+ .demo-1 .largeheader {
+   background-image: url("../image/touchingMars.jpg");
+ }
+ 
+ .maintitle {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #F9F1E9;
+    text-align: center;
+    top: 50%;
+    left: 25%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    
+ }
+ 
+ .invisibleCircle
+ {
+    position:absolute;
+    width: 30%;
+    height: 35%;
+    border-radius: 50%;
+    padding: 50px;
+    margin: 20px;
+    color: #F9F1E9;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+ }
+ 
+ .demo .maintitle {
+    font-size: 4.2em;
+    letter-spacing: 0.1em;
+ }
+ 
+ 
+ .demo .maintitle a{
+    color: rgb(253, 253, 253);
+ }
+ 
+ .maintitle .thin {
+    font-weight: 200;
+    
+ }
+ 
+ @media only screen and (max-width: 768px) {
+    .demo .main-title {
+       font-size: 2em;
+    }
+
+      
+
+    .maintitle {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        color: #F9F1E9;
+        text-align: center;
+        top: 20%;
+        left: 50%;
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0);
+        
+     }
+   }
+
+ .categories a
+ {
+     color: rgba(36, 79, 128, 0.795);
+     position: relative;
+     
+ }
+ .categories ul li
+{
+    list-style: none;
+   list-style: coffee;
+   transition-duration: 1000ms;
+   width: 250px;
+}
+
+
+.categories ul li:hover
+{
+    list-style: square;
+    color:rgb(7, 5, 5);
+    background-color: rgba(90, 97, 90, 0.788);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    width: 150px;
+    -ms-transform: skewX(3deg); /* IE 9 */
+    transform: skewX(3deg);
+    transition-duration: 500ms;
+}
+
+.categories ul li a.current {
+    background: black;
+  }
+

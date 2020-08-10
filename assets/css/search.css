@@ -1,0 +1,218 @@
+
+.hero-full-screen {
+    background: url("../image/ASC.jpg") center center fixed;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-size: cover;
+  }
+
+  .svg .hero-full-screen {background: url("../image/ASC.jpg");}
+
+
+ body
+ {
+   background-color: rgba(0, 0, 0, 0.582);
+ }
+    #searchBar
+    {
+      color: white;
+      float: left;
+      position: sticky;
+      top: 10px;
+      margin-left: 5%;
+      width: 70%;
+      background-color: rgba(0, 0, 0, 0.932);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      z-index: 2;
+    }
+
+
+
+    #searchBar label
+    {
+      color: white;
+      z-index: 2;
+    }
+
+    #autocomplete-input
+    {
+      color: white;
+    }
+    
+    #back-to-top
+    {
+      width: 20%;
+      display: grid;
+      float: right;
+      position: sticky;
+      margin-top: 15px;
+      margin-right: 15px;
+      top:10px;
+      height: 60px;
+      z-index: 5;
+    }
+
+    #content
+    {
+      display: grid;
+      margin-top: 100px;
+      margin-left: 100px;
+      margin-right: 10px;
+      gap: 20px;
+    
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: auto;
+    }
+    .card
+    {
+      height: 400px;
+      width: auto;
+      max-width: 375px;
+      overflow: hidden;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .card-image img {
+     min-height: 400px;
+     transition-duration: 300ms;
+     
+}
+
+.card-image img:hover {
+    
+    position: relative;
+   transform: scale(1.2);
+}
+
+
+
+
+@media only screen and (max-width : 812px)
+{
+
+
+    #content
+    {
+      /* display: grid; */
+      /* margin-top: 50px; */
+      /* margin-left: 10px; */
+    
+      margin-right: 1000px;
+      /* gap: 20px; */
+     /* position: relative; */
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+      z-index: 9;
+    }
+    .card
+    {
+      height: 400px;
+      max-width: 360px;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .card-image img {
+     min-height: 400px;
+     transition-duration: 300ms;
+}
+
+.card-image img:hover {
+    
+    position: relative;
+   transform: scale(1.2);
+}
+}
+
+
+/* View Image */
+
+/* View Image */
+.modal
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    border: 1px solid black;
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    /* z-index:10; */
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+
+}
+
+.modalactive
+{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.modalheader
+{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid black;
+}
+
+.modalheader .title
+{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modalheader .closebutton
+{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modalbody
+{
+    padding: 10px 15px;
+}
+
+#overlay{
+    position: fixed;
+    opacity: 1;
+    transition: 200ms ease-in-out;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(7, 3, 3, 0.74);
+    pointer-events: none;
+    
+}
+
+#overlay .active
+{
+    opacity: 1;
+    pointer-events: all;
+}
